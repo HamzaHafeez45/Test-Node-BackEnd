@@ -24,6 +24,3 @@ app.use("/api/information", information);
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
-
-//Hello
-//GDwpk6XA7dWpYQbT
