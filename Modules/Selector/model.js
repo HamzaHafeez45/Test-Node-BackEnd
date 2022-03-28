@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const selectorSchema = new mongoose.Schema({
-  selector: {
+  label: {
     type: String,
-    required: [true, "Selector is required"],
   },
+  children: [mongoose.Schema.Types.Mixed],
 });
 const Selector = mongoose.model("selector", selectorSchema);
 

@@ -7,10 +7,7 @@ exports.getInformationByID = async (id) => {
 
 //get all informations
 exports.getAllInformations = async () => {
-  return await Information.find().populate({
-    path: "selector",
-    select: "selector -_id",
-  });
+  return await Information.find();
 };
 
 //post information

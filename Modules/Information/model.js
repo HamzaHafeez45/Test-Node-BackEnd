@@ -6,9 +6,7 @@ const informationSchema = new mongoose.Schema({
     required: [true, "Name is required"],
   },
   selector: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "selector",
-    required: [true, "Selector is required"],
+    type: String,
   },
   agreement: {
     type: Boolean,
